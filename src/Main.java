@@ -1,10 +1,13 @@
+import product.Product;
+
 public class Main {
+        public static void main(String[] args) {
+        //System.out.println("Hello world!");
 
-    public double getIva(double Price){
-        return Price * 0.19;
-    }
+        Product cellphone = new Product(150.10,"Cuadrada","rojo",150);
 
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println(cellphone.getIva());
+        System.out.println(cellphone.getPriceWithIva());
+        System.out.println(cellphone);
     }
 }

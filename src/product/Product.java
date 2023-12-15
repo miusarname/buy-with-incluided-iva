@@ -9,4 +9,12 @@ public class Product extends Thing {
         super(Weight, Form, Colors);
         this.price = Price;
     }
+
+    public double getIva(){
+        return this.price * 0.19;
+    }
+
+    public double getPriceWithIva(){
+        return getIva()+this.price;
+    }
 }
